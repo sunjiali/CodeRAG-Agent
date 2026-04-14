@@ -66,25 +66,6 @@ CodeRAG-Agent/
 └── tests/                 # 测试
 ```
 
-## 技术亮点与面试问答
-
-### Q1: RAG系统中如何处理代码这种结构化文本？
-
-使用Tree-sitter解析AST，按函数/类级别切分，保留完整语义单元。
-
-### Q2: LangGraph和普通工作流的区别？
-
-- 状态管理：完整的状态机，支持检查点
-- 条件路由：函数式条件边
-- 断点续跑：checkpoint机制
-- 人机协作：interrupt_before/after
-
-### Q3: ReAct相比CoT的优势？
-
-- ReAct可以执行动作，与外部交互
-- Observation验证动作结果
-- 更适合RAG场景
-
 ## 测试
 
 ```bash
