@@ -18,7 +18,7 @@ class TestMemoryManager:
     """测试记忆管理器"""
     
     def test_create_memory_manager(self, tmp_path):
-        manager = MemoryManager(str(tmp_path / "memory"))
+        MemoryManager(str(tmp_path / "memory"))
         
         # 检查目录是否创建
         assert (tmp_path / "memory").exists()

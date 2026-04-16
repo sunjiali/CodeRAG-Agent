@@ -3,8 +3,8 @@ Context Assembler - 优先级上下文组装
 
 基于Token预算，按优先级组装上下文内容
 """
-from typing import List, Dict, Any, Optional, Tuple
-from dataclasses import dataclass, field
+from typing import List, Dict, Any
+from dataclasses import dataclass
 from enum import IntEnum
 from loguru import logger
 

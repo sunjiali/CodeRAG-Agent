@@ -7,11 +7,16 @@ from pydantic_settings import BaseSettings
 from pydantic import Field
 
 
+# 项目根目录（类属性，不参与验证）
+PROJECT_ROOT = Path(__file__).parent.parent
+
+
 class Settings(BaseSettings):
-    PROJECT_ROOT: Path = Field(default=Path(__file__).parent.parent)
-    DATA_DIR: Path = Field(default=PROJECT_ROOT / "data")
-    CHROMA_DIR: Path = Field(default=DATA_DIR / "chroma_db")
-    CACHE_DIR: Path = Field(default=DATA_DIR / "cache")
+    # 路径配置（使用 model_validator 动态计算）
+    PROJECT_ROOT: Path = Field(default_factory=lambda: PROJECT_ROOT)
+    DATA_DIR: Path = Field(default_factory=lambda: PROJECT_ROOT / "data")
+    CHROMA_DIR: Path = Field(default_factory=lambda: PROJECT_ROOT / "data" / "chroma_db")
+    CACHE_DIR: Path = Field(default_factory=lambda: PROJECT_ROOT / "data" / "cache")
     
     # LLM配置
     LLM_PROVIDER: str = Field(default="openai")

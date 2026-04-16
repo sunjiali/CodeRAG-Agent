@@ -1,7 +1,6 @@
 """
 测试工具
 """
-import pytest
 from src.agent.tools import ToolResult, CodeAnalyzeTool
 
 

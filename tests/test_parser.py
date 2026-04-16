@@ -1,8 +1,6 @@
 """
 测试代码解析器
 """
-import pytest
-from pathlib import Path
 from src.indexer.parser import CodeParser, CodeEntity
 
 

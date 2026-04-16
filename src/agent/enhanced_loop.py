@@ -7,7 +7,7 @@ Enhanced Agent Loop - 优化的Agent循环
 3. 流式输出
 4. Turn预算管理
 """
-from typing import List, Dict, Any, Optional, Callable, Generator
+from typing import List, Dict, Any, Optional, Generator
 from dataclasses import dataclass, field
 from enum import Enum
 from loguru import logger
