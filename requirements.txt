@@ -27,5 +27,5 @@ tqdm>=4.66.0
 loguru>=0.7.0
 
 # Testing
-pytest>=7.4.0
+pytest>=9.1.1
 pytest-asyncio>=0.23.0
