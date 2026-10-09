@@ -8,7 +8,7 @@ langchain-community>=0.0.20
 chromadb>=0.4.22
 
 # Code Parsing
-tree-sitter>=0.20.4
+tree-sitter>=0.26.0
 tree-sitter-languages>=1.8.0
 
 # API & Web
