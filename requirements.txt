@@ -5,7 +5,7 @@ langchain-openai>=0.0.5
 langchain-community>=0.0.20
 
 # Vector Store
-chromadb>=0.4.22
+chromadb>=1.5.9
 
 # Code Parsing
 tree-sitter>=0.20.4
