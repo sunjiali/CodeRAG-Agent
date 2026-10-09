@@ -13,7 +13,7 @@ tree-sitter-languages>=1.8.0
 
 # API & Web
 fastapi>=0.109.0
-uvicorn>=0.27.0
+uvicorn>=0.54.0
 gradio>=4.16.0
 
 # Embedding Models
